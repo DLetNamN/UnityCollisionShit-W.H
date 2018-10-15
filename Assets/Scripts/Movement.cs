@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
-
+    private SceneManager SceneChanger;
     public Rigidbody2D rBody;
+    private Scene level0;
 
     // Use this for initialization
     void Start()
@@ -24,7 +26,10 @@ public class Movement : MonoBehaviour
         //.anuglarVelocity
         //
 
-
+        if (Input.GetKey(KeyCode.R))
+        {
+            SceneManager.LoadScene("level0");
+        }
     }
 
     void FixedUpdate()
@@ -45,5 +50,10 @@ public class Movement : MonoBehaviour
         {
             rBody.AddForce(new Vector2(-10f, 0f), ForceMode2D.Force);
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+
     }
 }
