@@ -29,6 +29,6 @@ public class Movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rBody.AddForce(new Vector2(10f, 0f));
+        rBody.AddForce(new Vector2(10f, 0f), ForceMode2D.Force);
     }
 }
