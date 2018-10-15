@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
-    private SceneManager SceneChanger;
+    
     public Rigidbody2D rBody;
-    private Scene level0;
+    
 
     // Use this for initialization
     void Start()
@@ -25,11 +25,6 @@ public class Movement : MonoBehaviour
         //AddTorque
         //.anuglarVelocity
         //
-
-        if (Input.GetKey(KeyCode.R))
-        {
-            SceneManager.LoadScene("level0");
-        }
     }
 
     void FixedUpdate()
