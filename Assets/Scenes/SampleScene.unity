@@ -290,3 +290,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2714d0900570334581db3874c8e4fce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rBody: {fileID: 2079109124}
+--- !u!50 &2079109124 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 50069392628567248, guid: 8212f7f3ffce3dd45b6388e998a030f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 2079109121}
