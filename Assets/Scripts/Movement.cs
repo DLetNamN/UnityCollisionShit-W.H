@@ -29,6 +29,21 @@ public class Movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rBody.AddForce(new Vector2(10f, 0f), ForceMode2D.Force);
+        if (Input.GetKey(KeyCode.W))
+        {
+            rBody.AddForce(new Vector2(0f, 20f), ForceMode2D.Force);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            rBody.AddForce(new Vector2(0f, -10f), ForceMode2D.Force);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            rBody.AddForce(new Vector2(10f, 0f), ForceMode2D.Force);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            rBody.AddForce(new Vector2(-10f, 0f), ForceMode2D.Force);
+        }
     }
 }
